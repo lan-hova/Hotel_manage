@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+/* @import url('https://fonts.cdnfonts.com/css/museo-sans-rounded'); */
+/* tailwindcss */
+@import '~tailwindcss/base';
+@import '~tailwindcss/components';
+@import '~tailwindcss/utilities';
+@import '~antd/dist/reset.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Museo Sans Rounded', sans-serif; */
+}
+
+/* Custom antd */
+.ant-btn-primary {
+    background-color: #00b96b;
+}
+.ant-switch {
+    background-color: #57606f;
+}
+.ant-upload-list-item-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .ehAzla:hover {
+    cursor: pointer;
+    border: 1px solid #00b96b;
+    background-color: #e1faeb !important;
+} */
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #a4b0be;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #57606f;
+}
+
+::selection {
+    background: #00b96b;
+    color: white;
+}
+::-moz-selection {
+    background: #00b96b;
+    color: white;
+}
+::-webkit-selection {
+    background: #00b96b;
+    color: white;
+}
+
+/* css for pagination */
+.pagination {
+    list-style: none;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    gap: 5px;
+}
+
+.pagination .page-num {
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: 400;
+}
+
+.page-num {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #00b96b;
+    color: #000000;
+    background: #ffffff;
+}
+
+.active-num {
+    color: #ffffff;
+    background: #00b96b;
+}
+
+/* custom file upload */
+.upload-btn-wrapper {
+    display: inline-block;
+    /* background-color: indigo; */
+    /* color: white; */
+    /* padding: 0.7rem; */
+    /* font-family: sans-serif; */
+    /* border-radius: 0.3rem; */
+    cursor: pointer;
+}
